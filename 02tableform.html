@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Registration Form</title>
+</head>
+<body>
+       <form action="3">
+        <table border="5" style="background-color: orange;">
+            <tr>      
+
+                
+                <td><label for="FirstName">First Name</label></td>
+                <td>
+                    <input type="text" id="FirstName" placeholder="Vikas" maxlenght="50" required />
+                    <small>(max50 characters allowed)</small>
+
+       </td>
+       </tr>
+        <tr>
+           
+       
+                 <td><label for="lastname">Last Name:</label></td>
+                 <td>
+                 <input type="text" id="lastname" placeholder="Pathade" maxlength="50" />
+                  <small>(max 50 characters allowed)</small>
+                  </td>
+                  </tr>
+                  <tr>
+                    <td><label for="email">Email ID:</label></td>
+                    <td><input type="emai" id="email" placeholder="pathadevikas2@gmail.com" /></td>
+                              
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number:</label></td>
+                    <td>
+                        <input type="tel" id="mobile" pattern="[0-9]{10}" placeholder="7038464212" />
+                        <small>(10 digits allowed)</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="Gender" id="male" value="male" />
+                        <label for="male">male</label>
+                        <input type="radio" name="Gender" id="female" value="female" />
+                        <label for="female">female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">date of birth (dob):</label></td>
+                    <td><input type="date" id="dob" /></td>
+               </tr>
+               <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" rows="5" cols="30" placeholder="enter your address"></textarea></td>
+             </tr>
+             <tr>
+                <td><label for="city">city:</label></td>
+                <td>
+                    <input type="text" id="city" placeholder="pune" maxlength="50" />
+                    <small>(max 50 characters allowed</small>
+                </td>
+             </tr>
+             <tr>
+                <td><label for="pin">pin code:</label></td>
+                <td>
+                    <input type="number" id="pin" placeholder="414502" />
+                    <small>(max 6 digits allowed</small>
+                </td>
+             </tr>
+             <tr>
+                <td><label for="state">state:</label></td>
+                <td>
+                    <input type="text" id="state" placeholder="maharashtra" maxlength="50" />
+                    <small>(max 50 characters allowed)</small>
+                </td>
+             </tr>
+             <tr>
+                <td><label for="country">country:</label></td>
+                <td><input type="text" id="country" placeholder="india" /></td>
+             </tr>
+             <tr>
+                 <td><label>Hobbies:</label></td>
+                 <td>
+                    <input type="checkbox" id="drawing" />
+                    <label for="drawing">drawing</label>
+
+                    <input type="checkbox" id="travling" />
+                    <label for="travling">travling</label>
+
+                    <input type="checkbox" id="dancing" />
+                    <label for="dancing">dancing</label>
+
+                    <input type="checkbox" id="cricket" />
+                    <label for="cricket">cricket</label>
+                    <br/>
+                    <input type="checkbox" id="otherHobby" />
+                    <label for="otherHobby">other</label>
+                    <input type="text" id="otherHobby" placeholder="ex. teaching" maxlength="50" />
+                    <small>(max 50 charset allowed</small>
+                 </td>
+             </tr>
+             <tr>
+                <td><label>Qulification:</label></td>
+                <td>
+                    <input type="checkbox" id="highschool" />
+                    <label for="highschool">highschool (10th)</label>
+
+                    <input type="checkbox" id="intermediate" />
+                    <label for="intermediate">intermediate (12th)</label>
+
+                    <input type="checkbox" id="bachelors" />
+                    <label for="graduation">graduation (bachelors)</label>
+
+                    <input type="checkbox" id="master" />
+                    <label for="master">post graduation (master)</label>
+                     
+                </td>
+             </tr>
+             <tr>
+                <th colspan="2" style="te xt-align:center">
+                    <button type="submit">Submit</button>
+                </th> 
+             </tr>
+                
+        </table>
+       </form>
+</body>
+
+</html>
