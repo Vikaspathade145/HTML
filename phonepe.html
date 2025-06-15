@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhonePe UI Clone</title>
+  <style>
+     body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+  color: #333;
+}
+
+.app {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.header {
+  background: #320073;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h2 {
+  margin: 10px 0;
+}
+
+.btn {
+  background: white;
+  color: #320073;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.money-transfers,
+.recharge-bills {
+  padding: 20px;
+}
+
+.actions,
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.action,
+.service {
+  width: 45%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.view-all {
+  float: right;
+  color: purple;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.block {
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: center;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  position: sticky;
+  bottom: 0;
+}
+
+  </style>
+  
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <p>Do you know your Credit Score?</p>
+      <h2>Check for FREE on PhonePe</h2>
+      <button class="btn">Check Now →</button>
+    </header>
+
+    <section class="money-transfers">
+      <h3>Money Transfers</h3>
+      <div class="actions">
+        <div class="action">
+          <img src="phone-icon.png" alt="" />
+          <p>To Mobile Number</p>
+        </div>
+        <div class="action">
+          <img src="bank-icon.png" alt="" />
+          <p>To Bank & Self A/c</p>
+        </div>
+        <div class="action">
+          <img src="refer-icon.png" alt="" />
+          <p>Refer & Get Upto ₹200</p>
+        </div>
+        <div class="action">
+          <img src="balance-icon.png" alt="" />
+          <p>Check Balance</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="recharge-bills">
+      <h3>Recharge & Bills <span class="view-all">View All</span></h3>
+      <div class="services">
+        <div class="service">Recharge</div>
+        <div class="service">Rent</div>
+        <div class="service">Electricity</div>
+        <div class="service">Loan EMI</div>
+      </div>
+    </section>
+
+    <section class="extra">
+      <div class="block">Loans</div>
+      <div class="block">Insurance</div>
+    </section>
+
+    <footer class="bottom-nav">
+      <div>🏠 Home</div>
+      <div>🔍 Search</div>
+      <div>📷</div>
+      <div>🔔 Alerts</div>
+      <div>🕒 History</div>
+    </footer>
+  </div>
+</body>
+</html>

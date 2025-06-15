@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template</title>
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        width: 100%;
+        background-size: 100% 100%;
+        
+        
+        background-image: url(https://www.aorus.com/image/gallery/gallery-1625046506.jpg);
+      }
+
+      .navbar {
+        display: flex;
+        height: 70px;
+        width: 100%;
+        background-color:blue;
+        color: white;
+        backdrop-filter: blur(15px);
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        filter: drop-shadow(3px 3px 3px black);
+      }
+      .logo {
+        display: flex;
+        gap: 5px;
+        margin: 40px;
+        align-items: center;
+      }
+      #mlogo {
+        font-size: 1.8rem;
+      }
+      .home {
+        font-family: math;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 140px;
+
+        font-size: 1.2rem;
+      }
+      .top{
+        color: black;
+      } 
+      #icon {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        margin: 40px;
+        color:blueviolet;
+        font-size: 1.5rem;
+      }
+      .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content {
+        height: 500px;
+        width: 1300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .head1 {
+        font-size: 4rem;
+        line-height: 60px;
+        color: blueviolet;
+        align-items: center;
+        font-family: math;
+        letter-spacing: 1px;
+      }
+      #btn {
+        margin-top: 30px;
+        height: 50px;
+        width: 160px;
+        border: 1px solid blueviolet;
+        color: blueviolet;
+        border-radius: 25px;
+        font-size: 1.3rem;
+      }
+      #btn:hover {
+        background-color: blueviolet;
+        color: white;
+        cursor: pointer;
+      }
+      #para1 {
+        margin-top: 20px;
+        letter-spacing: 1px;
+        line-height: 25px;
+      }
+      .mainbody {
+        display: flex;
+        flex-direction: column;
+        height: 43vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+      }
+      .bodyheading {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: math;
+      }
+      .para2 {
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        width: 75%;
+        gap: 20px;
+        font-size: 1.9rem;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        justify-content: center;
+      }
+      .para3{
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: center;
+        line-height: 25px;
+        font-size: 1.1rem;
+      }
+      .navbar2{
+        height: 14vh;
+         background-color: rgb(63, 177, 222);
+      }
+      
+      .navbar2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 90px;
+        
+
+      }
+      .navbtn{
+        height: 40px;
+        width: 100px;
+        border-radius: 20px;
+        gap: 90px;
+        border: none;
+        background-color:rgb(120, 208, 243);
+       color: black;
+       font-size: 1.2rem;
+       margin: 30px;
+       font-family: math;
+        
+      }
+      .navbtn:hover{
+        background-color: aliceblue;
+        color:rgb(19, 170, 230);
+        cursor: pointer;
+      }
+     .clrbtn:hover{
+      background-color: aliceblue;
+      color: blueviolet;
+      font-size: 1.3rem;
+     }
+
+      .boxes{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 28px;
+       background-color:white;
+        height: 100vh;
+        width: 100%;
+        border-radius:25px 0px 25px 0px;
+      }
+      .boximg1,.boximg2,.boximg3,.boximg4,.boximg5,.boximg6,.boximg7,.boximg8{
+         height: 270px;
+         width: 21%;
+         border-radius: 25px 0px 25px 0px;
+        background-size: 100% 100%;
+        align-content: end;
+        
+
+      }
+      .imgbtn{
+        text-transform: capitalize;
+        justify-content: end;
+        border: none;
+        height: 30px;
+        width: 120px;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 20px;
+        color: aliceblue;
+        margin: 10px;
+        backdrop-filter: blur(5px);
+        
+      }
+      .imgpara{
+        color: aliceblue;
+        backdrop-filter: blur(15px);
+        border-radius: 0px 0px 25px 0px;
+        gap: 10px;
+      }
+
+      .boximg1{
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/ipad-vs-laptop-sq-668d1d35e8d40.jpeg); 
+      }
+       .boximg2{
+        background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/laptops/geforce-rtx-50-series-laptops-learn-og-1200x630-new.jpg);
+        }
+       .boximg3{
+         background-image: url(https://cdn.pixabay.com/photo/2024/01/10/16/21/laptop-8499942_1280.jpg);
+       }
+       .boximg4{
+        background-image: url(https://plus.unsplash.com/premium_photo-1661662850226-83c981ed4eba?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D);
+       }
+       .boximg5{
+        background-image: url(https://www.livemint.com/lm-img/img/2024/02/16/600x338/sdrfaew_1708073136063_1708073175037.jpg);
+        }
+       .boximg6{
+         background-image: url(https://www.livemint.com/lm-img/img/2024/02/16/600x338/sdrfaew_1708073136063_1708073175037.jpg);
+        }
+       .boximg7{
+        background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2023-11/231106-best-laptops-oo-main-efe15c.jpg);
+        }
+       .boximg8{
+         background-image: url(https://plus.unsplash.com/premium_photo-1663076367860-3cde6cedaf66?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFwdG9wJTIwaW4lMjBuYXR1cmV8ZW58MHx8MHx8fDA%3D);
+       }
+
+       .color{
+        height: 25vh;
+        width: 100%;
+        background-color:rgb(63, 177, 222);
+         display: flex;
+         gap: 30px;
+        justify-content: space-evenly;
+        gap: 30px;
+        justify-items: center;
+        align-items: center;
+        color: aliceblue;
+
+
+       }
+       #archiveicon{
+        font-size: 4rem;
+        color: aliceblue;
+    
+       }
+        .clrbtn{
+        height: 45px;
+        width: 150px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        font-family: math;
+        background-color: rgb(120, 208, 243);
+        }
+       #clrpara{
+        font-size: 1.8rem;
+       }
+       #clrpara2{
+        margin: 10px;
+        font-size: 1.2rem;
+       }
+
+        .recentwork{
+          display: flex;
+          flex-wrap: wrap;
+        height: 1100px;
+        width: 100%;
+        gap: 30px;
+          text-align: center; 
+          /* align-items: center;  */
+           align-content: center;  
+          justify-content: center; 
+        }
+       .heading1
+       {
+        font-family: math;
+        font-size: 2rem;
+        font-weight: light;
+         width: 100%;
+        justify-content: center;
+        margin-top: -80px;
+       }
+       .lastimg1,.lastimg2,.lastimg3,.lastimg4,.lastimg5,.lastimg6{
+        height: 380px;
+        width: 27%;
+        background-color: aqua;
+        background-size: 100% 100%;
+         align-content: end;
+         font-family:math;
+         cursor: pointer;
+         border-radius: 25px 2px 25px 2px;
+         
+       }
+       .lastimg1{
+        background-image: url(https://img.freepik.com/free-photo/laptop-stone-surface-sea-background_1232-430.jpg?semt=ais_hybrid&w=740);
+        
+       }
+       .lastimg2{
+        background-image: url(https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1000&format=pjpg&exif=0&iptc=0);
+       }
+       .lastimg3{
+        background-image: url(https://images.unsplash.com/photo-1517336714731-489689fd1ca8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwbGUlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D);
+       }
+       .lastimg4{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0KuLxoKA0jFdOGNxDUC2JMG-FlkhTE2m4g&s);
+       }
+       .lastimg5{
+        background-image: url(https://www.asus.com/media/Odin/Websites/global/Tab/20230823052350.jpg);
+       }
+       .lastimg6{
+        background-image: url(https://plus.unsplash.com/premium_photo-1661662850226-83c981ed4eba?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D);
+         align-content: end;
+       }
+       
+       .lastpara{
+        display: flex;
+        text-transform: capitalize;
+        font-size: 1.8rem;
+        color: aliceblue;
+        width: 199px;
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        border-radius: 25px 0px 25px 0px;
+      }
+       .lastpara1{
+        display: flex;
+        color: aliceblue;
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        border-radius: 25px 0px 25px 0px;
+       }
+       .lastpara:hover{
+        color: black;
+       }
+       .lastpara1:hover{
+        color: blueviolet;
+       }
+
+       .footer{
+      
+        height: 50vh;
+        width: 100%;
+         background-color: blue;
+         display: flex;
+         justify-content: space-around;
+         padding-top: 50px;
+         line-height: 40px;
+         font-family: math;
+         color: aliceblue;
+         
+       }
+       .theend{
+        line-height: normal;
+        margin-top: 20px;
+        font-size: 1.2rem;
+       }
+       .footericon{
+        margin: 10px;
+        color: aqua;
+       }
+       .bi{
+        color: azure;
+        gap: 50px;
+        margin: 10px;
+        font-size: 1.5rem;
+       }
+       .end{
+        font-size: 1.2rem;
+       }
+       .alin{
+        font-size: 2rem;
+       }
+       #building{
+      font-size: 2rem;
+       }
+      .info{
+        height: 15vh;
+        width: 100%;
+        background-color:purple;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.3rem;
+      }
+
+ </style>
+  </head>
+  <body>
+   
+      <div class="navbar">
+        <div class="logo">
+          <i id="mlogo" class="bi bi-building"></i>
+          <h2>purple</h2>
+          <h2>buzz</h2>
+        </div>
+
+        <div class="home">
+          <li>home</li>
+          <li>about</li>
+          <li>work</li>
+          <li>pricing</li>
+          <li>contact</li>
+        </div>
+
+        <div>
+          <i id="bi bi-bell"></i>
+          <i class="bi bi-person-circle"></i>
+         <i class="bi bi-gear"></i>
+        </div>
+      </div>
+
+
+ <section class="container">
+        <div class="body">
+         <div class="content">
+          <p class="head1">HTML CSS Template with <br>Bootstrap 5 Beta 1</p>
+
+          <p id="para1">
+            You are not allowed to re-distribute this Purple Buzz HTML template
+            as a downloadable ZIP file on any<br />
+            of Free CSS collection websites. This is strongly prohibited. Please
+            contact for more information.
+          </p>
+
+          <button id="btn" type="submit">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainbody">
+      <div class="bodyheading">
+        <p>Services</p>
+      </div>
+
+      <div class="para2">
+       
+        <p> <i style="color: black;" class="bi bi-gift"></i>Make Success for future</p>
+      </div>
+
+      <div class="para3">
+        <p>You are free to use this template for your commercial or business websites. You are not allowed to <br> re-distribute this template ZIP  file any template collection websites. It is too easy to illegally <br> copy and repost this template.
+
+</p>
+      </div>
+    </section>
+
+    <div  class="navbar2">
+
+<div>
+<button class="navbtn">All</button>
+<button class="navbtn">Graphics</button>
+<button class="navbtn">UI/UX</button>
+<button class="navbtn">Branding</button>
+</div>
+</div>
+
+ <section class="imgbox">
+
+ <div class="boxes">
+  <div class="boximg1">
+    <button class="imgbtn">UI/UX design</button>
+    <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+  <div class="boximg2">
+     <button class="imgbtn">social media</button>
+     <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+  <div class="boximg3">
+     <button class="imgbtn">Marketing</button>
+     <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+  <div class="boximg4">
+     <button class="imgbtn">graphic</button>
+     <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+  <div class="boximg5">
+     <button class="imgbtn">digital marketing</button>
+     <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+  <div class="boximg6">
+     <button class="imgbtn">market reaserch</button>
+     <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+  <div class="boximg7">
+     <button class="imgbtn">buisness</button>
+     <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+  <div class="boximg8">
+     <button class="imgbtn">branding</button>
+     <p class="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur.</p>
+  </div>
+
+ </section>
+
+ <section class="color">
+  
+  <div>
+    <i id="archiveicon" class="bi bi-archive-fill"></i>
+  </div>
+
+<div>
+  <p id="clrpara">Great transformations successful</p>
+<p id="clrpara2">Quis ipsum suspendisse ultrices gravida.</p>
+</div>
+
+<div><button class="clrbtn">View Our Work</button></div>
+
+ </section>
+
+ <section class="recentwork">
+  <div class="heading1">  <h1>Recent  Works</h1></div>
+
+
+ <div class="lastimg1">
+  <p class="lastpara">social media</p>
+  <p class="lastpara1">Ullamco laboris nisi ut aliquip ex</p>
+ </div>
+<div class="lastimg2">
+  <p class="lastpara">web marketing</p>
+  <p class="lastpara1">psum officia anim id est laborum</p>
+</div>
+<div class="lastimg3">
+  <p class="lastpara">reaserch & dev</p>
+  <P class="lastpara1">sum dolor sit consenctutur</P>
+</div>
+<div class="lastimg4">
+  <p class="lastpara">public relation</p>
+  <p class="lastpara1">lorem ipsum dolor sit amet</p>
+</div>
+<div class="lastimg5">
+  <p class="lastpara">branding</p>
+ <p class="lastpara1">put enm ad minim veniam</p> 
+</div>
+<div class="lastimg6">
+  <p class="lastpara">creative design</p>
+  <p class="lastpara1">Mollit anim id est laborum</p>
+</div>
+ </section>
+
+ <section class="footer">
+
+  
+
+    <div>
+             <h1 class="alin"> <i id="building" class="bi bi-building"></i>  purple buzz</h1>
+       <p class="theend">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit, sed do eiusmod tempor <br> incididunt ut.</p>
+       <p class="footericon"><i class="bi bi-facebook"></i> <i class="bi bi-linkedin"></i> <i class="bi bi-whatsapp"></i> <i class="bi bi-instagram"></i>  <i class="bi bi-twitter"></i></p>
+       </div>
+
+       <div  >
+        <h1 class="alin">Our Company</h1>
+        <p class="end"><i class="bi bi-chevron-right"></i> Home</p>
+        <p class="end"> <i class="bi bi-chevron-right"></i>About Us</p>
+        <P class="end"> <i class="bi bi-chevron-right"></i>Work</P>
+        <p class="end"> <i class="bi bi-chevron-right"></i>Price</p>
+        <p class="end"> <i class="bi bi-chevron-right"></i>Contact</p>
+       </div>
+
+       <div>
+        <h1 class="alin">Our Works</h1>
+        <p class="end"><i class="bi bi-chevron-right"></i> Branding</p>
+        <p class="end"><i class="bi bi-chevron-right"></i>Buisness</p>
+        <p class="end"><i class="bi bi-chevron-right"></i>Marketing</p>
+        <p class="end"><i class="bi bi-chevron-right"></i>Social Media</p>
+        <p class="end"><i class="bi bi-chevron-right"></i>Digital Solution</p>
+        <p class="end"><i class="bi bi-chevron-right"></i>Graphic</p>
+       </div>
+
+       <div>
+        <h1 class="alin">For Client</h1>
+        <p class="end"><i class="bi bi-telephone"></i>  7038464212</p>
+        <p class="end"><i class="bi bi-envelope"></i>   pathadevikas2@gamil.com</p>
+       </div>
+
+ </div>
+ </section>
+
+ <section class="info">
+
+  
+    <p>© Copyright 2025 Purple Buzz Company. All Rights Reserved.
+</p>
+<p>Designed by Vikas Pathade</p>
+  </div>
+
+ </section>
+  </body>
+</html>
